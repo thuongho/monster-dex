@@ -1,0 +1,30 @@
+npx create-react-app <app-name>
+- npx will scaffold all the necessary dependencies to start a react app
+
+A good rule of thumb as to when to use the key attribute is this: Anytime you use the map() function inside of render, or you have a list of the same jsx elements one after another, they need a key attribute
+
+key is used by React to render multiple components
+- it updates the dom only the component that needs to update
+
+life cycle method
+- methods called at diff stages at when the component gets rendered
+
+any attribute inside custom tag is props
+anything inside custom tags are children
+
+state turns into props
+- state usually live in only one location
+
+setState is asynchronous
+
+whenever setState gets called, render gets re-rendered
+- don't setState in render
+
+babel transpile jsx down to js for older browser
+
+place state at top so that it one way go down to children
+
+arrow function auto bind this to App Class or when handleChange was first defined
+lexical scoping - lexically scope this to when method was first defined which is App component
+
+use arrow function on any class methods you define that are not part of react (render, componentDidMount)
