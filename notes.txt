@@ -28,3 +28,20 @@ arrow function auto bind this to App Class or when handleChange was first define
 lexical scoping - lexically scope this to when method was first defined which is App component
 
 use arrow function on any class methods you define that are not part of react (render, componentDidMount)
+
+to deploy to github pages
+1. yarn add gh-pages
+- add github pages
+2. add homepage to package.json
+- "homepage": "https://thuongho.github.io/monsters-dex"
+3. add predeploy and deploy
+- "predeploy": "yarn build",
+- "deploy": "gh-pages -d build"
+4. run yarn deploy
+5. ggpush
+
+npm and yarn knows to run any script with pre before the actual script
+- predeploy > deploy
+
+zsh ggpush
+- git push origin master

@@ -41,6 +41,7 @@ class App extends Component {
     const filteredMonsters = monsters.filter(monster => monster.name.toLowerCase().includes(searchField.toLowerCase()));
     return (
       <div className="App">
+        <h1>Monster Dex</h1>
         <SearchBox
           placeholder='search monsters'
           handleChange={this.handleChange}
