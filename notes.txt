@@ -39,6 +39,7 @@ to deploy to github pages
 - "deploy": "gh-pages -d build"
 4. run yarn deploy
 5. ggpush
+6. go to github repo > settings > make sure source is pointed to gh-pages branch
 
 npm and yarn knows to run any script with pre before the actual script
 - predeploy > deploy
