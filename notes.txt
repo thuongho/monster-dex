@@ -46,3 +46,45 @@ npm and yarn knows to run any script with pre before the actual script
 
 zsh ggpush
 - git push origin master
+
+unpkg.org to get react library in script
+
+updating dependencies
+yarn list react react-dom react-scripts
+- shows latest
+^ - update to latest minor version without breaking change
+yarn upgrade
+
+npm audit fix 
+- fix security vulnerability
+- yarn u have to update each depeencies seperately as there is no easy method to fix the vulnerabilities
+
+more tools > rendering > paint flashing
+- shows the dom element that will be rendered in green
+
+whenever you want to update state using setState and there is prop and state
+- use function instead of passing in a parameter
+(prevState, prevProps) => return {state object update like data: []}
+
+componentDidMount
+- api calls
+
+componentDidUpdate
+- updating phase
+- new props
+- change state
+
+shouldComponentUpdate(nextProps, nextState)
+- sits between updating props, states
+- like ngChange
+- return false will cause it to not re-render the component
+
+componentWillUnmount
+- perform before stripping the component
+- clean up component
+- remove anything that might be memory leak
+
+3 things that make a good React developer
+Decide on components
+Decide the State and where it lives
+What changes when state changes
