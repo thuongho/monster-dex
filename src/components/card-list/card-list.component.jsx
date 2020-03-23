@@ -1,8 +1,8 @@
 import React from 'react';
 import './card-list.styles.css';
-import {Card} from './card/card.component';
+import Card from './card/card.component';
 
-export const CardList = props => (
+const CardList = props => (
   // console.log('props', props);
   // children
   // return (<div className="card-list">{ props.children }</div>)
@@ -15,3 +15,5 @@ export const CardList = props => (
     }
   </div>
 );
+
+export default CardList;

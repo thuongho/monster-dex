@@ -5,6 +5,7 @@ A good rule of thumb as to when to use the key attribute is this: Anytime you us
 
 key is used by React to render multiple components
 - it updates the dom only the component that needs to update
+- it uses key to keep track of the components and when there are changes, it knows which element changed based on the keys
 
 life cycle method
 - methods called at diff stages at when the component gets rendered
@@ -12,10 +13,16 @@ life cycle method
 any attribute inside custom tag is props
 anything inside custom tags are children
 
+STATE >> children >> props
+- state goes into children, then those become props for the child component
 state turns into props
 - state usually live in only one location
 
+must call super() to access this
+
 setState is asynchronous
+- must update state with setState
+- can't just update using this.state.isVisible = true;
 
 whenever setState gets called, render gets re-rendered
 - don't setState in render
@@ -66,6 +73,9 @@ whenever you want to update state using setState and there is prop and state
 - use function instead of passing in a parameter
 (prevState, prevProps) => return {state object update like data: []}
 
+mount
+- update the dom element with the component
+
 componentDidMount
 - api calls
 
@@ -88,3 +98,25 @@ componentWillUnmount
 Decide on components
 Decide the State and where it lives
 What changes when state changes
+
+functional component
+ no access to internal state
+ no access to lifecycle methods
+ we just want to render some html
+
+
+yarn install tachyons
+- like bootstrap with class names
+
+============
+index.js
+import 'tachyons'
+
+separation of concerns
+- use jsx to create virtual dom
+- only change what's changed
+
+children
+- props.children
+- every props has children
+- create components that wrap other components

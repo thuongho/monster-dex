@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
-import { CardList } from './components/card-list/card-list.component';
+import CardList from './components/card-list/card-list.component';
 import { SearchBox } from './components/search-box/search-box.component';
+import Scroll from './components/scroll/scroll';
 import './App.css';
 
 // if we don't import Component, we can use class App extends React.Component
@@ -39,16 +40,22 @@ class App extends Component {
     // pulling monsters and searchField from state and setting it to a const
     const { monsters, searchField } = this.state;
     const filteredMonsters = monsters.filter(monster => monster.name.toLowerCase().includes(searchField.toLowerCase()));
-    return (
-      <div className="App">
-        <h1>Monster Dex</h1>
-        <SearchBox
-          placeholder='search monsters'
-          handleChange={this.handleChange}
-        />
-        <CardList monsters={filteredMonsters} />
-      </div>
-    );
+    if (this.state.monsters.length === 0) {
+      return <h1>Loading...</h1>
+    } else {
+      return (
+        <div className="App">
+          <h1>Monster Dex</h1>
+          <SearchBox
+            placeholder='search monsters'
+            handleChange={this.handleChange}
+          />
+          <Scroll>
+            <CardList monsters={filteredMonsters} />
+          </Scroll>
+        </div>
+      );
+    }
   }
 }
 
