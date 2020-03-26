@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/monster-dex/static/css/main.2bbd2239.chunk.css",
-    "main.js": "/monster-dex/static/js/main.9770fccc.chunk.js",
-    "main.js.map": "/monster-dex/static/js/main.9770fccc.chunk.js.map",
+    "main.js": "/monster-dex/static/js/main.f8d6bd84.chunk.js",
+    "main.js.map": "/monster-dex/static/js/main.f8d6bd84.chunk.js.map",
     "runtime-main.js": "/monster-dex/static/js/runtime-main.206f403d.js",
     "runtime-main.js.map": "/monster-dex/static/js/runtime-main.206f403d.js.map",
     "static/js/2.d21041bc.chunk.js": "/monster-dex/static/js/2.d21041bc.chunk.js",
     "static/js/2.d21041bc.chunk.js.map": "/monster-dex/static/js/2.d21041bc.chunk.js.map",
     "index.html": "/monster-dex/index.html",
-    "precache-manifest.5cbc4ed37939533338c9322e49adc127.js": "/monster-dex/precache-manifest.5cbc4ed37939533338c9322e49adc127.js",
+    "precache-manifest.e31fab0de2eddb2c82bb91d8d3bc8c71.js": "/monster-dex/precache-manifest.e31fab0de2eddb2c82bb91d8d3bc8c71.js",
     "service-worker.js": "/monster-dex/service-worker.js",
     "static/css/main.2bbd2239.chunk.css.map": "/monster-dex/static/css/main.2bbd2239.chunk.css.map",
     "static/js/2.d21041bc.chunk.js.LICENSE.txt": "/monster-dex/static/js/2.d21041bc.chunk.js.LICENSE.txt"
@@ -17,6 +17,6 @@
     "static/js/runtime-main.206f403d.js",
     "static/js/2.d21041bc.chunk.js",
     "static/css/main.2bbd2239.chunk.css",
-    "static/js/main.9770fccc.chunk.js"
+    "static/js/main.f8d6bd84.chunk.js"
   ]
 }
